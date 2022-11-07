@@ -1,14 +1,8 @@
-import tkinter as tk
-from customtkinter import *
 import matplotlib.pyplot
 from matplotlib import *
 import numpy as np
 from numpy import *
 from sympy import *
-from scipy import *
-import math
-from matplotlib.colors import ListedColormap
-
 
 class cGraphics():
     def plotZW(frame, expression = "z**k", max_K = 10, grid_density = 5, grid = False):                                    
