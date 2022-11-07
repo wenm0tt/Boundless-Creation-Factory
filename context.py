@@ -61,10 +61,6 @@ class cGraphics():
         return idx
         
     def plotNV(frame, expression = "z", resolution = 100,dynamic_rendering = False):
-        # basically we need an array of for each root that contains all points that go there. 
-        # We then plot all those points at once with one color and move on to the next root.
-        # plotting everything at once means matplotlib doesnt have to take the time to plot. 
-
         z = Symbol("z")
         exp = sympify(expression)
         f = lambdify(z, exp)
@@ -97,10 +93,6 @@ class cGraphics():
             matplotlib.pyplot.axis('off')
             matplotlib.pyplot.pause(0.001)
         matplotlib.pyplot.show()
-        # 1. solve for the roots
-        # 2. for each root that exists, create a 2d array of falses and trues. 
-        #    if its true it means that cnum at that point leads to the root when we do newtons method on it
-        # 3. plot 
 
     def plot3D():
         pass
